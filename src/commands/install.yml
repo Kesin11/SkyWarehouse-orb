@@ -1,0 +1,24 @@
+description: >
+  Download and install skw.jar from Github Releases
+parameters:
+  parameters:
+    version:
+      type: string
+      default: "latest"
+      description: "skw release version(tag)"
+steps:
+  - when:
+      condition:
+        equal: [ latest, << parameters.version >> ]
+      steps:
+        - run: |
+            LATEST=$(curl -sS https://api.github.com/repos/Kesin11/SkyWarehouse/releases/latest | jq -r .tag_name)
+            curl --retry 3 -sSL -o skw.jar https://github.com/Kesin11/SkyWarehouse/releases/download/${LATEST}/skw.jar
+            chmod +x skw.jar
+  - unless:
+      condition:
+        equal: [ latest, << parameters.version >> ]
+      steps:
+        - run: |
+            curl --retry 3 -sSL -o skw.jar https://github.com/Kesin11/SkyWarehouse/releases/download/<< parameters.version >>/skw.jar
+            chmod +x skw.jar

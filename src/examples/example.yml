@@ -6,8 +6,32 @@ description: >
 usage:
   version: 2.1
   orbs:
-    <orb-name>: <namespace>/<orb-name>@1.2.3
+    skw-orb: kesin11/skw-orb@1.0.0
+  jobs:
+    upload-artifact:
+      environment:
+        GOOGLE_APPLICATION_CREDENTIALS: service.json
+        GCS_SERVICE_ACCOUNT: $GCS_SERVICE_ACCOUNT
+      executor: skw/default
+      steps:
+        - checkout
+        - skw/install:
+            version: latest
+        - run:
+            name: Decode service account json
+            command: echo $GCS_SERVICE_ACCOUNT | base64 --decode --ignore-garbage > service.json
+        - run:
+            name: Create dummy file
+            command: |
+                mkdir -p ${CIRCLE_WORKFLOW_ID}
+                touch ${CIRCLE_WORKFLOW_ID}/test-upload
+        - skw/upload:
+            bucket: kesin11_bazel_cache
+            key: circleci_orbs
+            prefix: orbs
+            tag: ${CIRCLE_BUILD_NUM}
+            paths: ${CIRCLE_WORKFLOW_ID}/test-upload
   workflows:
-    use-my-orb:
+    build:
       jobs:
-        - <orb-name>/<job-name>
+        - upload-artifact
