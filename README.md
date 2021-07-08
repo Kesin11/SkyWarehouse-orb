@@ -1,14 +1,14 @@
 # Orb Project Template
+<!---
+[![CircleCI Build Status](https://circleci.com/gh/Kesin11/SkyWarehouse-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/Kesin11/SkyWarehouse-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/kesin11/skw.svg)](https://circleci.com/orbs/registry/orb/kesin11/skw) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Kesin11/SkyWarehouse-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
-[![CircleCI Build Status](https://circleci.com/gh/Kesin11/SkyWarehouse-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/Kesin11/SkyWarehouse-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/kesin11/skw.svg)](https://circleci.com/orbs/registry/orb/kesin11/skw) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Kesin11/SkyWarehouse-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
-
-
+--->
 
 A starter template for orb projects. Build, test, and publish orbs automatically on CircleCI with [Orb-Tools](https://circleci.com/orbs/registry/orb/circleci/orb-tools).
 
 Additional READMEs are available in each directory.
 
-
+**Meta**: This repository is open for contributions! Feel free to open a pull request with your changes. Due to the nature of this repository, it is not built on CircleCI. The Resources and How to Contribute sections relate to an orb created with this template, rather than the template itself.
 
 ## Resources
 
@@ -21,7 +21,7 @@ We welcome [issues](https://github.com/Kesin11/SkyWarehouse-orb/issues) to and [
 
 ### How to Publish
 * Create and push a branch with your new features.
-* When ready to publish a new production version, create a Pull Request from _feature branch_ to `master`.
+* When ready to publish a new production version, create a Pull Request from _feature branch_ to `main`.
 * The title of the pull request must contain a special semver tag: `[semver:<segment>]` where `<segment>` is replaced by one of the following values.
 
 | Increment | Description|
