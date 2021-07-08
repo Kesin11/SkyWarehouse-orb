@@ -1,6 +1,6 @@
 # Orb Project Template
 <!---
-[![CircleCI Build Status](https://circleci.com/gh/Kesin11/SkyWarehouse-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/Kesin11/SkyWarehouse-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/kesin11/skw-orb.svg)](https://circleci.com/orbs/registry/orb/kesin11/skw-orb) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Kesin11/SkyWarehouse-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/Kesin11/SkyWarehouse-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/Kesin11/SkyWarehouse-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/kesin11/skw.svg)](https://circleci.com/orbs/registry/orb/kesin11/skw) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Kesin11/SkyWarehouse-orb/main/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 --->
 

@@ -6,7 +6,7 @@ description: >
 usage:
   version: 2.1
   orbs:
-    skw-orb: kesin11/skw-orb@1.0.0
+    skw-orb: kesin11/skw@1.0.0
   jobs:
     upload-artifact:
       environment:
