@@ -12,7 +12,7 @@ usage:
       environment:
         GOOGLE_APPLICATION_CREDENTIALS: service.json
         GCS_SERVICE_ACCOUNT: $GCS_SERVICE_ACCOUNT
-      executor: skw/default
+      executor: skw-orb/default
       steps:
         - checkout
         - skw/install:
