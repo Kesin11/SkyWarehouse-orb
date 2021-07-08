@@ -1,7 +1,7 @@
 description: >
   skw executor cimg/openjdk image
 docker:
-  - image: cimg/openjdk:<<parameters.tag>>'
+  - image: cimg/openjdk:<<parameters.tag>>
 parameters:
   tag:
     default: "11.0"
