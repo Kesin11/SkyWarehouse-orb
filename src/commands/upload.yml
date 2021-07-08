@@ -1,17 +1,16 @@
 description: >
   skw.jar upload command
 parameters:
-  parameters:
-    bucket:
-      type: string
-    key:
-      type: string
-    prefix:
-      type: string
-    tag:
-      type: string
-    paths:
-      type: string
+  bucket:
+    type: string
+  key:
+    type: string
+  prefix:
+    type: string
+  tag:
+    type: string
+  paths:
+    type: string
 steps:
   - run: |
       java -jar skw.jar upload \

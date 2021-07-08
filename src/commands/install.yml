@@ -1,11 +1,10 @@
 description: >
   Download and install skw.jar from Github Releases
 parameters:
-  parameters:
-    version:
-      type: string
-      default: "latest"
-      description: "skw release version(tag)"
+  version:
+    type: string
+    default: "latest"
+    description: "skw release version(tag)"
 steps:
   - when:
       condition:
